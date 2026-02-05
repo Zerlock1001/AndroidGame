@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
+  m_Name: PhotoFrame
+  m_EditorClassIdentifier: 
+  content: Do you remember my birthday?
+  choicesCount: 2
+  choices:
+  - I remeber it's November 12.
+  - I forgot it.
+  followingDialogues:
+  - {fileID: 11400000, guid: 73f8c4c70a9d47a4bad9c2c6aca63ae1, type: 2}
+  - {fileID: 0}
+  moodChanges: 0a000000f6ffffff

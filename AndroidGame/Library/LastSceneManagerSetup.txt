@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/AndroidGame/Scene/UnpackingScene.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0

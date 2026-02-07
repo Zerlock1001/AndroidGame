@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
+  m_Name: Dwarf
+  m_EditorClassIdentifier: 
+  content: That was our first Christmas together.
+  choicesCount: 3
+  choices:
+  - The most special Christmas.
+  - We built a snowman together that day.
+  - We will have many more Christmas togther.
+  followingDialogues:
+  - {fileID: 11400000, guid: 2f1ebc86cdb2a7d418ebda2bd8d98934, type: 2}
+  - {fileID: 11400000, guid: bedbffe22cfec0643a159b42b3e72ff5, type: 2}
+  - {fileID: 11400000, guid: b5058188fe6af9d40916c3a1e8857aae, type: 2}
+  moodChanges: 

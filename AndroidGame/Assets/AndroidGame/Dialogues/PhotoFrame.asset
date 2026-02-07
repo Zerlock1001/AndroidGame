@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
   m_Name: PhotoFrame
   m_EditorClassIdentifier: 
-  content: Do you remember my birthday?
-  choicesCount: 2
+  content: This one can be placed in the middle.
+  choicesCount: 3
   choices:
-  - I remeber it's November 12.
-  - I forgot it.
+  - We look so happy together.
+  - You were in such a good mood that day.
+  - I can't quite recall the details.
   followingDialogues:
   - {fileID: 11400000, guid: 73f8c4c70a9d47a4bad9c2c6aca63ae1, type: 2}
-  - {fileID: 0}
-  moodChanges: 0a000000f6ffffff
+  - {fileID: 11400000, guid: 1b1d0fa8d353dd943b78e482ff2e3de5, type: 2}
+  - {fileID: 11400000, guid: 19dd3d59cf82ab54d90a5b9288d8656d, type: 2}
+  moodChanges: 0a000000f6ffffff00000000

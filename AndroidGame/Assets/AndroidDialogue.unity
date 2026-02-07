@@ -416,8 +416,8 @@ MonoBehaviour:
   itemName: Toy
   isPlaced: 0
   belongItemsBox: {fileID: 0}
-  isDialogue: 0
-  dialogueContent: {fileID: 0}
+  isDialogue: 1
+  dialogueContent: {fileID: 11400000, guid: 472ad5f49963e7f45adb1fa6a4d560e2, type: 2}
 --- !u!212 &182345656
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -593,8 +593,8 @@ MonoBehaviour:
   itemName: Photo
   isPlaced: 0
   belongItemsBox: {fileID: 0}
-  isDialogue: 0
-  dialogueContent: {fileID: 0}
+  isDialogue: 1
+  dialogueContent: {fileID: 11400000, guid: 908ec890c74e1bb4a916d4eb8fabaf64, type: 2}
 --- !u!212 &228333782
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1016,8 +1016,8 @@ MonoBehaviour:
   itemName: Toy
   isPlaced: 0
   belongItemsBox: {fileID: 0}
-  isDialogue: 0
-  dialogueContent: {fileID: 0}
+  isDialogue: 1
+  dialogueContent: {fileID: 11400000, guid: 62d52633a8f21e34c86cc3b3bddcae98, type: 2}
 --- !u!212 &754806357
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2077,8 +2077,8 @@ MonoBehaviour:
   itemName: Flower
   isPlaced: 0
   belongItemsBox: {fileID: 0}
-  isDialogue: 0
-  dialogueContent: {fileID: 0}
+  isDialogue: 1
+  dialogueContent: {fileID: 11400000, guid: 32e21349626e1bb44b35611a96340f10, type: 2}
 --- !u!212 &1255436506
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2254,8 +2254,8 @@ MonoBehaviour:
   itemName: Toy
   isPlaced: 0
   belongItemsBox: {fileID: 0}
-  isDialogue: 0
-  dialogueContent: {fileID: 0}
+  isDialogue: 1
+  dialogueContent: {fileID: 11400000, guid: 4dae646b6c7f0de48a311446c7662b8a, type: 2}
 --- !u!212 &1329597340
 SpriteRenderer:
   m_ObjectHideFlags: 0

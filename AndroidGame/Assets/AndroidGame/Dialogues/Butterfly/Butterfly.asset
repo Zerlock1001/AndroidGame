@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
+  m_Name: Butterfly
+  m_EditorClassIdentifier: 
+  content: Do butterfly specimne count as a symbol of eternity?
+  choicesCount: 3
+  choices:
+  - Yes and it is very beautiful.
+  - But specimen also looks cruel.
+  - Why do you suddenly think of this?
+  followingDialogues:
+  - {fileID: 11400000, guid: fbacb1150c8e44840b8792fa7b5c6eb8, type: 2}
+  - {fileID: 11400000, guid: 934488c20543cdb4b822f0d598f94712, type: 2}
+  - {fileID: 11400000, guid: a2ace4e2f3c22224f99589954c244174, type: 2}
+  moodChanges: 

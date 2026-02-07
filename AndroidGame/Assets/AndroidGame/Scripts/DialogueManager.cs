@@ -30,12 +30,27 @@ public class DialogueManager : MonoBehaviour
         }
     }
     public void ChoiceButtonClick(int choiceIndex){
-        GameManager.instance.AddMoodValue(currentDialogueContent.moodChanges[choiceIndex]);
-        if(currentDialogueContent.followingDialogues[choiceIndex] != null){
-            DialogueManager.Instance.AwakeDialogue(currentDialogueContent.followingDialogues[choiceIndex]);
+        if(choiceIndex>=currentDialogueContent.effects.Length){
+        }
+        else if(currentDialogueContent.effects[choiceIndex].effect!=null){
+            foreach(ChoiceEffect effect in currentDialogueContent.effects[choiceIndex].effect){
+                effect.DoEffect();
+            }
+        }
+        if(choiceIndex<currentDialogueContent.followingDialogues.Length){
+            if(currentDialogueContent.followingDialogues[choiceIndex] != null){
+             DialogueManager.Instance.AwakeDialogue(currentDialogueContent.followingDialogues[choiceIndex]);
+            }
+            else{
+                if(GameManager.instance!=null){
+                    GameManager.instance.EndDialogue();
+                }
+            }
         }
         else{
-            GameManager.instance.EndDialogue();
+            if(GameManager.instance!=null){
+                GameManager.instance.EndDialogue();
+            }
         }
     }
 }

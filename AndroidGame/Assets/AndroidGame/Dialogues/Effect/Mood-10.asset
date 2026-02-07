@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
-  m_Name: ForgetBirthday
+  m_Script: {fileID: 11500000, guid: 0409463b1c27f6d4fa7c27afa17ca41c, type: 3}
+  m_Name: Mood-10
   m_EditorClassIdentifier: 
-  content: You dare forget my birthday???? I'm angry!
-  choicesCount: 0
-  choices: []
-  followingDialogues: []
-  effects: []
+  moodChange: -10

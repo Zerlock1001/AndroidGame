@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 namespace AndroidGame{
 [CreateAssetMenu(fileName = "DialogueContent", menuName = "Scriptable Objects/DialogueContent")]
 public class DialogueContent : ScriptableObject
@@ -7,6 +8,9 @@ public class DialogueContent : ScriptableObject
     public int choicesCount = 0;
     public string[] choices;
     public DialogueContent[] followingDialogues;
-    public int[] moodChanges;
+    [SerializeField] public Effects[] effects;
+    [System.Serializable] public class Effects{
+        public List<ChoiceEffect> effect;
+    }
 }
 }

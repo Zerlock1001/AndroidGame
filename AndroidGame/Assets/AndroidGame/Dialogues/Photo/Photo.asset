@@ -22,4 +22,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a1071c1adb1254949a292851fefa9657, type: 2}
   - {fileID: 11400000, guid: 1931eb1b5a2f5ae458b952e56287c307, type: 2}
   - {fileID: 11400000, guid: 9c712d59f371f7c48bf6caf42302f240, type: 2}
-  moodChanges: 
+  effects:
+  - effect: []
+  - effect: []
+  - effect: []

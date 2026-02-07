@@ -13,18 +13,18 @@ public class GameManager : MonoBehaviour
     public List<ItemsBox> itemsBoxes;
     //public int 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public virtual void Start()
     {
         instance = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         FindItemsBoxes();
     }
-    public void FindItemsBoxes(){
+    public virtual void FindItemsBoxes(){
         itemsBoxes = FindObjectsByType<ItemsBox>(FindObjectsSortMode.None).ToList();
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         CheckAllItemsBoxesFinished();
     }
@@ -37,19 +37,19 @@ public class GameManager : MonoBehaviour
         TRUE,
         FALSE,
     }
-    public void AwakeDialogue(DialogueContent dialogueContent){
+    public virtual void AwakeDialogue(DialogueContent dialogueContent){
         currentGameState = GameState.Dialogue;
         dialoguePanel.SetActive(true);
         DialogueManager.Instance.AwakeDialogue(dialogueContent);
     }
-    public void EndDialogue(){
+    public virtual void EndDialogue(){
         currentGameState = GameState.Playing;
         dialoguePanel.SetActive(false);
     }
-    public void AddMoodValue(int moodValue){
+    public virtual void AddMoodValue(int moodValue){
         GameData.Instance.MoodValue += moodValue;
     }
-    public bool CheckAllItemsBoxesFinished(){
+    public virtual bool CheckAllItemsBoxesFinished(){
         foreach(ItemsBox itemsBox in itemsBoxes){
             if(!itemsBox.Finished()){
                 return false;

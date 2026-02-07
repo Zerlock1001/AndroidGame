@@ -53,5 +53,15 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+    public void ClickAnyWhere(){
+        if(currentDialogueContent.choicesCount>0){
+            return;
+        }
+        else{
+            if(GameManager.instance!=null){
+                GameManager.instance.EndDialogue();
+            }
+        }
+    }
 }
 }

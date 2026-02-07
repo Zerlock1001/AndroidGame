@@ -996,9 +996,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AndroidGame.GameManager, Assembly-CSharp
-        m_MethodName: EndDialogue
+      - m_Target: {fileID: 5363613062815033254}
+        m_TargetAssemblyTypeName: AndroidGame.DialogueManager, Assembly-CSharp
+        m_MethodName: ClickAnyWhere
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

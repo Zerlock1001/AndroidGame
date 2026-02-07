@@ -416,8 +416,8 @@ MonoBehaviour:
   itemName: Toy
   isPlaced: 0
   belongItemsBox: {fileID: 0}
-  isDialogue: 0
-  dialogueContent: {fileID: 0}
+  isDialogue: 1
+  dialogueContent: {fileID: 11400000, guid: 472ad5f49963e7f45adb1fa6a4d560e2, type: 2}
 --- !u!212 &182345656
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -593,8 +593,8 @@ MonoBehaviour:
   itemName: Photo
   isPlaced: 0
   belongItemsBox: {fileID: 0}
-  isDialogue: 0
-  dialogueContent: {fileID: 0}
+  isDialogue: 1
+  dialogueContent: {fileID: 11400000, guid: 908ec890c74e1bb4a916d4eb8fabaf64, type: 2}
 --- !u!212 &228333782
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1016,8 +1016,8 @@ MonoBehaviour:
   itemName: Toy
   isPlaced: 0
   belongItemsBox: {fileID: 0}
-  isDialogue: 0
-  dialogueContent: {fileID: 0}
+  isDialogue: 1
+  dialogueContent: {fileID: 11400000, guid: 62d52633a8f21e34c86cc3b3bddcae98, type: 2}
 --- !u!212 &754806357
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1974,7 +1974,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0875, y: -0.18, z: 0}
-  m_LocalScale: {x: 0.93949854, y: 0.9717681, z: 1}
+  m_LocalScale: {x: 0.962986, y: 0.9717681, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2077,8 +2077,8 @@ MonoBehaviour:
   itemName: Flower
   isPlaced: 0
   belongItemsBox: {fileID: 0}
-  isDialogue: 0
-  dialogueContent: {fileID: 0}
+  isDialogue: 1
+  dialogueContent: {fileID: 11400000, guid: 32e21349626e1bb44b35611a96340f10, type: 2}
 --- !u!212 &1255436506
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2254,8 +2254,8 @@ MonoBehaviour:
   itemName: Toy
   isPlaced: 0
   belongItemsBox: {fileID: 0}
-  isDialogue: 0
-  dialogueContent: {fileID: 0}
+  isDialogue: 1
+  dialogueContent: {fileID: 11400000, guid: 4dae646b6c7f0de48a311446c7662b8a, type: 2}
 --- !u!212 &1329597340
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2775,13 +2775,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714777701}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.92, y: -3.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0044747824, w: 0.99999005}
+  m_LocalPosition: {x: 1.52, y: -3.09, z: 0}
+  m_LocalScale: {x: 0.82322, y: 0.82322, z: 0.82322}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.513}
 --- !u!61 &1714777704
 BoxCollider2D:
   m_ObjectHideFlags: 0

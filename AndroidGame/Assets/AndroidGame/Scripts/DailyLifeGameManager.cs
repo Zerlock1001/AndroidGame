@@ -47,5 +47,8 @@ public class DailyLifeGameManager : GameManager
             currentStep = gameSteps[currentStepIndex];
         }
     }
+    public DailyLifeStep CurrentStep(){
+        return gameSteps[currentStepIndex];
+    }
 }
 }

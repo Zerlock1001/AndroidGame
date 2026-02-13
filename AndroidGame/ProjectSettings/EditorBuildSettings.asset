@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AndroidGame/Scene/UnpackingScene.unity
     guid: 8a4c4ef561dccba4f9840600a95b450e
+  - enabled: 1
+    path: Assets/AndroidGame/Scene/LivingRoom.unity
+    guid: eb4240c38e43e444c8c60bb68f707473
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

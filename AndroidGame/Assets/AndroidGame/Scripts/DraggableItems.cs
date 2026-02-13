@@ -44,7 +44,9 @@ public class DraggableItems : MonoBehaviour
                     //成功放下
                     //transform.position = hit.collider.gameObject.transform.position;
                     PutDownOnCertainSlot(itemSlot);
-                    belongItemsBox.NextItem();
+                    if(belongItemsBox != null){
+                        belongItemsBox.NextItem();
+                    }
                 }
                 else{
                     //放下失败
@@ -68,7 +70,12 @@ public class DraggableItems : MonoBehaviour
         isPlaced = true;
         //Debug.Log("放置成功，触发对应事件");
         if(isDialogue){
-            GameManager.instance.AwakeDialogue(dialogueContent);
+            if(GameManager.instance != null){
+                GameManager.instance.AwakeDialogue(dialogueContent);
+            }
+            else if(DailyLifeGameManager.Instance != null){
+                DailyLifeGameManager.Instance.NextStep();
+            }
         }
     }
 }

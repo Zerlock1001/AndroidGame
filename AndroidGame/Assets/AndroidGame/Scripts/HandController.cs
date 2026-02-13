@@ -15,10 +15,21 @@ public class HandController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.instance.currentGameState == GameManager.GameState.Playing){
+        if(GameManager.instance != null){
+            if(GameManager.instance.currentGameState == GameManager.GameState.Playing){
             DragItem();
             PutDownItem();
+            }
         }
+        else{
+            if(DailyLifeGameManager.Instance != null){
+                if(DailyLifeGameManager.Instance.CurrentStep() is DailyLifeStepDrag){
+                    DragItem();
+                    PutDownItem();
+                }
+            }
+        }
+
     }
     public void DragItem(){
         if(Input.GetMouseButtonDown(0)){

@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d001678176764b479e3151db6546947, type: 3}
-  m_Name: PhotoStay
+  m_Script: {fileID: 11500000, guid: 9450dfd0f1a1a904691bcb0cfc5ab786, type: 3}
+  m_Name: Drag
   m_EditorClassIdentifier: 
-  gameObjectName: Cellphone
-  targetPosition: {x: 0, y: -2.25, z: 0}
-  duration: 2

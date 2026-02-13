@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d001678176764b479e3151db6546947, type: 3}
   m_Name: PhotoDown
   m_EditorClassIdentifier: 
-  gameObjectName: PhotoScreen
+  gameObjectName: Cellphone
   targetPosition: {x: 0, y: -10, z: 0}
   duration: 2

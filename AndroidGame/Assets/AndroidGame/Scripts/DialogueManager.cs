@@ -45,6 +45,9 @@ public class DialogueManager : MonoBehaviour
                 if(GameManager.instance!=null){
                     GameManager.instance.EndDialogue();
                 }
+                if(DailyLifeGameManager.Instance!=null){
+                    DailyLifeGameManager.Instance.EndDialogue();
+                }
             }
         }
         else{
@@ -61,6 +64,13 @@ public class DialogueManager : MonoBehaviour
             if(GameManager.instance!=null){
                 GameManager.instance.EndDialogue();
             }
+            else if(DailyLifeGameManager.Instance!=null){
+                Debug.Log("DailyLifeGameManager.Instance != null");
+
+                DailyLifeGameManager.Instance.EndDialogue();
+                DailyLifeGameManager.Instance.NextStep();
+            }
+            Debug.Log("DailyLifeGameManager.Instance == null");
         }
     }
 }

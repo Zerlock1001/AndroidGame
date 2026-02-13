@@ -8,7 +8,13 @@ public class ItemSlot : MonoBehaviour
     public GameObject itemInThisSlot = null;
     public int itemCount = 0;
     public int maxItemCount = 1;
+    [Header("物体偏移")]
     public bool usingOffSet = false;
+    public Vector3 itemOffset = Vector3.zero;
+
+    [Header("物体旋转")]
+    public bool isItemRotated = false;
+    public Vector3 itemRotation = Vector3.zero;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -39,7 +45,10 @@ public class ItemSlot : MonoBehaviour
             //item.transform.position = transform.position;
         }
         else{
-            item.transform.position = transform.position;
+            item.transform.position = transform.position + itemOffset;
+        }
+        if(isItemRotated){
+            item.transform.rotation = Quaternion.Euler(itemRotation);
         }
         //item.transform.parent = transform;
     }

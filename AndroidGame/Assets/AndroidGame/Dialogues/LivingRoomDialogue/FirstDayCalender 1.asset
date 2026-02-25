@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
   m_Name: FirstDayCalender 1
   m_EditorClassIdentifier: 
-  content: Sad...
+  content: Because today is a special day.
   choicesCount: 1
   choices:
-  - ...
+  - Sorry I can't remeber.
   followingDialogues:
   - {fileID: 0}
   effects:

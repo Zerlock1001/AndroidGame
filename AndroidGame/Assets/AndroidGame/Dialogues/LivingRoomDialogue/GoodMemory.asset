@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
-  m_Name: FirstDayCalender
+  m_Name: GoodMemory
   m_EditorClassIdentifier: 
-  content: Ervething looks perfect!
-  choicesCount: 3
+  content: Today marks our first anniversary of living together. You always had a
+    good memory before..
+  choicesCount: 1
   choices:
-  - The breakfast looks really lavish.
-  - Why did you buy roses?
-  - (sit down)
+  - It must be something wrong with me.
   followingDialogues:
-  - {fileID: 11400000, guid: e5ba4fb4038b194488bef7d4a58fc06b, type: 2}
-  - {fileID: 11400000, guid: 309e4d30bd09c36428a840e348cc2dab, type: 2}
-  - {fileID: 11400000, guid: 175761946fb70e04aaedd14092f8e1e3, type: 2}
+  - {fileID: 0}
   effects:
-  - effect: []
+  - effect:
+    - {fileID: 11400000, guid: a23e08cd5710fd5439c26522a3e62a9e, type: 2}
+    - {fileID: 11400000, guid: 4d71f5d2e82bd9345b1bb78be669bc1a, type: 2}

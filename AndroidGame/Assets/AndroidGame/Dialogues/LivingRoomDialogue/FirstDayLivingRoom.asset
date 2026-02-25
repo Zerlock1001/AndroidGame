@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
   m_Name: FirstDayLivingRoom
   m_EditorClassIdentifier: 
-  content: Why is the flower out? Drag it!
+  content: Can you help me to put the roses in the vase?
   choicesCount: 1
   choices:
-  - Let me fix it!
+  - Sure
   followingDialogues:
   - {fileID: 0}
   effects:

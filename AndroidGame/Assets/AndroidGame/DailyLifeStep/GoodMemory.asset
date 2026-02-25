@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b7365c01f9fdb429e4364d476d902c, type: 3}
   m_Name: GoodMemory
   m_EditorClassIdentifier: 
-  dialogueContent: {fileID: 11400000, guid: 752b5850e59082849ab99e9b58fcd893, type: 2}
+  dialogueContent: {fileID: 11400000, guid: 8de985808d370f8439cdda6246b34480, type: 2}

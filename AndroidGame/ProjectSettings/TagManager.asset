@@ -50,5 +50,8 @@ TagManager:
   - name: Items
     uniqueID: 3771843261
     locked: 0
+  - name: Scene
+    uniqueID: 3781824483
+    locked: 0
   m_RenderingLayers:
   - Default

@@ -52,5 +52,16 @@ public class ItemSlot : MonoBehaviour
         }
         //item.transform.parent = transform;
     }
+    public void PreviewItem(GameObject item){
+        if(usingOffSet){
+            //item.transform.position = transform.position;
+        }
+        else{
+            item.transform.position = transform.position + itemOffset;
+        }
+        if(isItemRotated){
+            item.transform.rotation = Quaternion.Euler(itemRotation);
+        }
+    }
 }
 }

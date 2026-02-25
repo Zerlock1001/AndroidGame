@@ -3,6 +3,7 @@ namespace AndroidGame{
 public class DraggableItems : MonoBehaviour
 {
     public Vector3 startPosition;
+    public Quaternion startRotation;
     public bool isBeingHeld = false;
     public string itemName;
     public bool isPlaced = false;
@@ -15,6 +16,7 @@ public class DraggableItems : MonoBehaviour
     void Start()
     {
         startPosition = transform.position;
+        startRotation = transform.rotation;
     }
 
     // Update is called once per frame
@@ -29,13 +31,20 @@ public class DraggableItems : MonoBehaviour
         if(isBeingHeld){
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+            if(!PutDownPreview()){
+                Reset();
+            }
         }
+    }
+    public void Reset(){
+        transform.rotation = startRotation;
     }
     public void PutDown(){
         isBeingHeld = false;
         //Debug.Log("PutDown");
         //TO-DO: 需要添加放下的逻辑
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("ItemSlot"));
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
+        RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("ItemSlot"));
         if(hit.collider != null){
             //Debug.Log(hit.collider.gameObject.name);
             if(hit.collider.gameObject.GetComponent<ItemSlot>() != null){
@@ -57,13 +66,29 @@ public class DraggableItems : MonoBehaviour
             }
             else{
                 //没有找到ItemSlot
+                Debug.Log("没有找到ItemSlot");
                 transform.position = startPosition;
             }
         }
         else{
             //没有找到ItemSlot
+            Debug.Log("ItemSlot not found");
             transform.position = startPosition;
         }
+    }
+    public bool PutDownPreview(){
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
+        RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero, Mathf.Infinity, LayerMask.GetMask("ItemSlot"));
+        if(hit.collider != null){
+            if(hit.collider.gameObject.GetComponent<ItemSlot>() != null){
+                ItemSlot itemSlot = hit.collider.gameObject.GetComponent<ItemSlot>();
+                if(itemSlot.CanPlaceItem(itemName)){
+                    itemSlot.PreviewItem(gameObject);
+                    return true;
+                }
+            }
+        }
+        return false;
     }
     public void PutDownOnCertainSlot(ItemSlot itemSlot){
         itemSlot.PlaceItem(gameObject);

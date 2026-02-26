@@ -15,9 +15,9 @@ MonoBehaviour:
   content: Have you forgotten what day it is today?
   choicesCount: 1
   choices:
-  - I don''t remeber...
+  - I don't remember...
   followingDialogues:
   - {fileID: 0}
   effects:
   - effect:
-    - {fileID: 11400000, guid: a23e08cd5710fd5439c26522a3e62a9e, type: 2}
+    - {fileID: 11400000, guid: 8b6249ac884dd344fa081b51ec1975f5, type: 2}

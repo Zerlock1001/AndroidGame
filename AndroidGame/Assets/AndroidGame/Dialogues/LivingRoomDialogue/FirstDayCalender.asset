@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
   m_Name: FirstDayCalender
   m_EditorClassIdentifier: 
-  content: Ervething looks perfect!
+  content: Everything looks perfect!
   choicesCount: 3
   choices:
   - The breakfast looks really lavish.

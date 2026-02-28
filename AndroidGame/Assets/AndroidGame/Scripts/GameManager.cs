@@ -38,12 +38,12 @@ public class GameManager : MonoBehaviour
         FALSE,
     }
     public virtual void AwakeDialogue(DialogueContent dialogueContent){
-        currentGameState = GameState.Dialogue;
+        //currentGameState = GameState.Dialogue;
         dialoguePanel.SetActive(true);
         DialogueManager.Instance.AwakeDialogue(dialogueContent);
     }
     public virtual void EndDialogue(){
-        currentGameState = GameState.Playing;
+        //currentGameState = GameState.Playing;
         dialoguePanel.SetActive(false);
     }
     public virtual void AddMoodValue(int moodValue){

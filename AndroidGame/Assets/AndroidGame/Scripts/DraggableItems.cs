@@ -8,6 +8,7 @@ public class DraggableItems : MonoBehaviour
     public string itemName;
     public bool isPlaced = false;
     public ItemsBox belongItemsBox;
+    public bool nextStep = false;
 
     [Header("对话")]
     public bool isDialogue = false;
@@ -52,6 +53,9 @@ public class DraggableItems : MonoBehaviour
                 if(itemSlot.CanPlaceItem(itemName)){
                     //成功放下
                     //transform.position = hit.collider.gameObject.transform.position;
+                    if(nextStep){
+                        DailyLifeGameManager.Instance.NextStep();
+                    }
                     PutDownOnCertainSlot(itemSlot);
                     if(belongItemsBox != null){
                         belongItemsBox.NextItem();
@@ -95,11 +99,8 @@ public class DraggableItems : MonoBehaviour
         isPlaced = true;
         //Debug.Log("放置成功，触发对应事件");
         if(isDialogue){
-            if(GameManager.instance != null){
-                GameManager.instance.AwakeDialogue(dialogueContent);
-            }
-            else if(DailyLifeGameManager.Instance != null){
-                DailyLifeGameManager.Instance.NextStep();
+            if(DailyLifeGameManager.Instance != null){
+                DailyLifeGameManager.Instance.AwakeDialogue(dialogueContent);
             }
         }
     }

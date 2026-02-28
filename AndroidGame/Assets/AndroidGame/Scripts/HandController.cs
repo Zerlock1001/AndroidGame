@@ -23,13 +23,12 @@ public class HandController : MonoBehaviour
         }
         else{
             if(DailyLifeGameManager.Instance != null){
-                if(DailyLifeGameManager.Instance.CurrentStep() is DailyLifeStepDrag){
+                if(DailyLifeGameManager.Instance.currentGameState == GameManager.GameState.Playing){
                     DragItem();
                     PutDownItem();
                 }
             }
         }
-
     }
     public void DragItem(){
         if(Input.GetMouseButtonDown(0)){

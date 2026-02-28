@@ -218,6 +218,9 @@ MonoBehaviour:
   itemCount: 0
   maxItemCount: 10
   usingOffSet: 1
+  itemOffset: {x: 0, y: 0, z: 0}
+  isItemRotated: 0
+  itemRotation: {x: 0, y: 0, z: 0}
 --- !u!212 &57198205
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -412,10 +415,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: 0, y: 0, z: 0}
+  startRotation: {x: 0, y: 0, z: 0, w: 0}
   isBeingHeld: 0
   itemName: Toy
   isPlaced: 0
   belongItemsBox: {fileID: 0}
+  nextStep: 0
   isDialogue: 1
   dialogueContent: {fileID: 11400000, guid: 472ad5f49963e7f45adb1fa6a4d560e2, type: 2}
 --- !u!212 &182345656
@@ -589,10 +594,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: 0, y: 0, z: 0}
+  startRotation: {x: 0, y: 0, z: 0, w: 0}
   isBeingHeld: 0
   itemName: Photo
   isPlaced: 0
   belongItemsBox: {fileID: 0}
+  nextStep: 0
   isDialogue: 1
   dialogueContent: {fileID: 11400000, guid: 908ec890c74e1bb4a916d4eb8fabaf64, type: 2}
 --- !u!212 &228333782
@@ -709,6 +716,9 @@ MonoBehaviour:
   itemCount: 0
   maxItemCount: 1
   usingOffSet: 0
+  itemOffset: {x: 0, y: 0, z: 0}
+  isItemRotated: 0
+  itemRotation: {x: 0, y: 0, z: 0}
 --- !u!212 &286870486
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -834,31 +844,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 306097415}
-  - component: {fileID: 306097414}
+  - component: {fileID: 306097416}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: DailyLifeGameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &306097414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306097413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a192b709bea22740937bfb04186ac4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentGameState: 0
-  isDialogue: 1
-  dialogueTextObject: {fileID: 2104327896}
-  dialoguePanel: {fileID: 310900123}
-  itemsBoxes: []
 --- !u!4 &306097415
 Transform:
   m_ObjectHideFlags: 0
@@ -874,6 +867,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &306097416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306097413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b37ee71db50c0b441a8be46ae3637151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentGameState: 2
+  isDialogue: 1
+  dialogueTextObject: {fileID: 2104327896}
+  dialoguePanel: {fileID: 310900123}
+  itemsBoxes:
+  - {fileID: 1714777705}
+  currentDialogueContent: {fileID: 0}
+  currentStep: {fileID: 0}
+  gameSteps:
+  - {fileID: 11400000, guid: 0950bea4c42c2af4e8af3a7df42a3c23, type: 2}
+  - {fileID: 11400000, guid: 144bbe1219826b640abcd6e2b6b5ceba, type: 2}
+  - {fileID: 11400000, guid: 5e4da4b63c428cd429419d739d126f06, type: 2}
+  - {fileID: 11400000, guid: 6dc583deaf107044dbb7be296809a8b9, type: 2}
 --- !u!1 &310900123 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 66590363662158809, guid: bac8b227c88fe8e46a1ea78b8d7a41e0, type: 3}
@@ -1023,10 +1041,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: 0, y: 0, z: 0}
+  startRotation: {x: 0, y: 0, z: 0, w: 0}
   isBeingHeld: 0
   itemName: Toy
   isPlaced: 0
   belongItemsBox: {fileID: 0}
+  nextStep: 1
   isDialogue: 1
   dialogueContent: {fileID: 11400000, guid: 62d52633a8f21e34c86cc3b3bddcae98, type: 2}
 --- !u!212 &754806357
@@ -1185,10 +1205,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: 0, y: 0, z: 0}
+  startRotation: {x: 0, y: 0, z: 0, w: 0}
   isBeingHeld: 0
   itemName: PhotoFrame
   isPlaced: 0
   belongItemsBox: {fileID: 0}
+  nextStep: 0
   isDialogue: 1
   dialogueContent: {fileID: 11400000, guid: 307b88bfc9bdb7244bf467d9e44cdab4, type: 2}
 --- !u!212 &768925327
@@ -1330,6 +1352,9 @@ MonoBehaviour:
   itemCount: 0
   maxItemCount: 1
   usingOffSet: 0
+  itemOffset: {x: 0, y: 0, z: 0}
+  isItemRotated: 0
+  itemRotation: {x: 0, y: 0, z: 0}
 --- !u!212 &1001715095
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1769,10 +1794,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: 0, y: 0, z: 0}
+  startRotation: {x: 0, y: 0, z: 0, w: 0}
   isBeingHeld: 0
   itemName: Flower
   isPlaced: 0
   belongItemsBox: {fileID: 0}
+  nextStep: 0
   isDialogue: 1
   dialogueContent: {fileID: 11400000, guid: 32e21349626e1bb44b35611a96340f10, type: 2}
 --- !u!212 &1255436506
@@ -1946,10 +1973,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: 0, y: 0, z: 0}
+  startRotation: {x: 0, y: 0, z: 0, w: 0}
   isBeingHeld: 0
   itemName: Toy
   isPlaced: 0
   belongItemsBox: {fileID: 0}
+  nextStep: 0
   isDialogue: 1
   dialogueContent: {fileID: 11400000, guid: 4dae646b6c7f0de48a311446c7662b8a, type: 2}
 --- !u!212 &1329597340
@@ -2119,6 +2148,9 @@ MonoBehaviour:
   itemCount: 0
   maxItemCount: 10
   usingOffSet: 1
+  itemOffset: {x: 0, y: 0, z: 0}
+  isItemRotated: 0
+  itemRotation: {x: 0, y: 0, z: 0}
 --- !u!212 &1352002220
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2245,10 +2277,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: 0, y: 0, z: 0}
+  startRotation: {x: 0, y: 0, z: 0, w: 0}
   isBeingHeld: 0
   itemName: Book
   isPlaced: 0
   belongItemsBox: {fileID: 0}
+  nextStep: 0
   isDialogue: 1
   dialogueContent: {fileID: 11400000, guid: 9ac6c81853fbb804980ac37d99490123, type: 2}
 --- !u!212 &1691017193
@@ -2709,6 +2743,9 @@ MonoBehaviour:
   itemCount: 0
   maxItemCount: 10
   usingOffSet: 1
+  itemOffset: {x: 0, y: 0, z: 0}
+  isItemRotated: 0
+  itemRotation: {x: 0, y: 0, z: 0}
 --- !u!212 &1914295720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2903,6 +2940,9 @@ MonoBehaviour:
   itemCount: 0
   maxItemCount: 1
   usingOffSet: 0
+  itemOffset: {x: 0, y: 0, z: 0}
+  isItemRotated: 0
+  itemRotation: {x: 0, y: 0, z: 0}
 --- !u!212 &2009581208
 SpriteRenderer:
   m_ObjectHideFlags: 0

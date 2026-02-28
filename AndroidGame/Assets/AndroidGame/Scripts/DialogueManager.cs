@@ -68,7 +68,9 @@ public class DialogueManager : MonoBehaviour
                 Debug.Log("DailyLifeGameManager.Instance != null");
 
                 DailyLifeGameManager.Instance.EndDialogue();
-                DailyLifeGameManager.Instance.NextStep();
+                if(DailyLifeGameManager.Instance.currentGameState != GameManager.GameState.Playing){
+                    DailyLifeGameManager.Instance.NextStep();
+                }
             }
             Debug.Log("DailyLifeGameManager.Instance == null");
         }

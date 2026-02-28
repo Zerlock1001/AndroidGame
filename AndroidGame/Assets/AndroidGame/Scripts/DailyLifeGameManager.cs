@@ -13,7 +13,9 @@ public class DailyLifeGameManager : GameManager
     public override void Start()
     {
         Instance = this;
-        currentStep = gameSteps[0];
+        if(gameSteps.Count > 0){
+            currentStep = gameSteps[0];
+        }
         /*if(currentDialogueContent != null){
             base.AwakeDialogue(currentDialogueContent);
         }*/
@@ -26,9 +28,11 @@ public class DailyLifeGameManager : GameManager
             return;
         }
         if(currentStep != null){
-            currentStep.DoEffect();
+            DailyLifeStep tempStep = currentStep;
+            currentStep = null;
+            tempStep.DoEffect();
+            Debug.Log("currentStep: " + tempStep);
         }
-        currentStep = null;
     }
     public void Test(){
         Debug.Log("Test");
@@ -42,6 +46,7 @@ public class DailyLifeGameManager : GameManager
         ShowGameObject,
     }
     public void NextStep(){
+        //Debug.Log("NextStep");
         currentStepIndex++;
         if(currentStepIndex < gameSteps.Count){
             currentStep = gameSteps[currentStepIndex];

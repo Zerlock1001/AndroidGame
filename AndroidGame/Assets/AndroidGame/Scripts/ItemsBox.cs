@@ -20,7 +20,7 @@ public class ItemsBox : MonoBehaviour
     }
     public void OnMouseDown()
     {
-        if(GameManager.instance.currentGameState != GameManager.GameState.Playing){
+        if(DailyLifeGameManager.Instance.currentGameState != GameManager.GameState.Playing){
             return;
         }
         if(HandController.instance.currentItem == null && !Finished()){

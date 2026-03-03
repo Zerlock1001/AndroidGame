@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
-  m_Name: DwarfFeedback1
+  m_Script: {fileID: 11500000, guid: 9bd59a9b00c94ce488f74f7a530d4431, type: 3}
+  m_Name: NoonToAfternoon
   m_EditorClassIdentifier: 
-  content: It was for me too.
-  choicesCount: 0
-  choices: []
-  followingDialogues: []
-  effects: []
+  GameObjectName: ChangeAnimation
+  animationClip: {fileID: 7400000, guid: 743898bc56716dd4fa385ff5218635cc, type: 2}
+  duration: 3

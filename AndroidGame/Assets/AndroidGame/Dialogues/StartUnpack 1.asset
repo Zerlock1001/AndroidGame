@@ -16,5 +16,8 @@ MonoBehaviour:
   choicesCount: 1
   choices:
   - Can't wait!
-  followingDialogues: []
-  effects: []
+  followingDialogues:
+  - {fileID: 0}
+  effects:
+  - effect:
+    - {fileID: 11400000, guid: 8b6249ac884dd344fa081b51ec1975f5, type: 2}

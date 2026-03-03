@@ -889,12 +889,17 @@ MonoBehaviour:
   currentStep: {fileID: 0}
   gameSteps:
   - {fileID: 11400000, guid: 0eab5e1472e928f4fab83906f9168857, type: 2}
+  - {fileID: 11400000, guid: 9b371cd68905c464d8307b187dc35163, type: 2}
   - {fileID: 11400000, guid: 185ea26977f94b544bdaef0e82e3cc27, type: 2}
   - {fileID: 11400000, guid: 0950bea4c42c2af4e8af3a7df42a3c23, type: 2}
   - {fileID: 11400000, guid: 144bbe1219826b640abcd6e2b6b5ceba, type: 2}
   - {fileID: 11400000, guid: 5e4da4b63c428cd429419d739d126f06, type: 2}
   - {fileID: 11400000, guid: 76efecb65e6a096488402492e3beb3af, type: 2}
-  - {fileID: 11400000, guid: fdfbb9fd88319fe44b61caf2bc71bb4e, type: 2}
+  - {fileID: 11400000, guid: 34b3f9c8fb6cf0546bf8e689d9180636, type: 2}
+  - {fileID: 11400000, guid: 4e5283535ba41ef4494d2e95d4dd6d7d, type: 2}
+  - {fileID: 11400000, guid: 0b0cce57d4ff793439e8885d781be8a0, type: 2}
+  - {fileID: 11400000, guid: 5a8f442ec767dc0449bbf9778ef96e21, type: 2}
+  - {fileID: 11400000, guid: 5a8f442ec767dc0449bbf9778ef96e21, type: 2}
 --- !u!1 &310900123 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 66590363662158809, guid: bac8b227c88fe8e46a1ea78b8d7a41e0, type: 3}

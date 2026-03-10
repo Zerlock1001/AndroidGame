@@ -20,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void AwakeDialogue(DialogueContent dialogueContent){
         currentDialogueContent = dialogueContent;
+        CheckConditions();
         dialogueTextObject.GetComponent<TMP_Text>().text = currentDialogueContent.content;
         for(int i = 0; i < choiceButtons.Length; i++){
             choiceButtons[i].SetActive(false);
@@ -27,6 +28,39 @@ public class DialogueManager : MonoBehaviour
         for(int i = 0; i < currentDialogueContent.choicesCount; i++){
             choiceButtons[i].SetActive(true);
             choiceButtons[i].GetComponentInChildren<TMP_Text>().text = currentDialogueContent.choices[i];
+        }
+    }
+    public void CheckConditions(){
+        for(int i = 0; i < currentDialogueContent.conditions.Count; i++){
+            DialogueContent.Conditions conditions = currentDialogueContent.conditions[i];
+            for(int j = 0; j < conditions.condition.Count; j++){
+                DialogueContent.Condition condition = conditions.condition[j];
+                if(condition.isMood){
+                    if(condition.higherThan){
+                        if(GameData.Instance.MoodValue <= condition.compareValue){
+                            break;
+                        }
+                    }
+                    else{
+                        if(GameData.Instance.MoodValue > condition.compareValue){
+                            break;
+                        }
+                    }
+                }
+                else{
+                    if(condition.higherThan){
+                        if(GameData.Instance.EvolutionValue <= condition.compareValue){
+                            break;
+                        }
+                    }
+                    else{
+                        if(GameData.Instance.EvolutionValue > condition.compareValue){
+                            break;
+                        }
+                    }
+                }
+            }
+            currentDialogueContent = currentDialogueContent.conditionsTrueDialogues[i];
         }
     }
     public void ChoiceButtonClick(int choiceIndex){

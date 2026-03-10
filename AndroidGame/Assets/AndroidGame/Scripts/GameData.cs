@@ -4,6 +4,7 @@ public class GameData : MonoBehaviour
 {
     private int currentDay = 1;
     public int moodValue = 50;
+    public int evolutionValue = 50;
     public static GameData Instance;
     public int CurrentDay { 
         get { return currentDay; }
@@ -18,6 +19,18 @@ public class GameData : MonoBehaviour
                 moodValue = 100;
             } else {
                 moodValue = value;
+            }
+        }
+    }
+    public int EvolutionValue{
+        get { return evolutionValue; }
+        set { 
+            if (value < 0) {
+                evolutionValue = 0;
+            } else if (value > 100) {
+                evolutionValue = 100;
+            } else {
+                evolutionValue = value;
             }
         }
     }

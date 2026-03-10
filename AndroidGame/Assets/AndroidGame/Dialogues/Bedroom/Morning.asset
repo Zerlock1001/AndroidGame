@@ -17,3 +17,5 @@ MonoBehaviour:
   choices: []
   followingDialogues: []
   effects: []
+  conditions: []
+  conditionsTrueDialogues: []

@@ -4,12 +4,14 @@ namespace AndroidGame{
 
 public class ChoiceEffectMoodChange : ChoiceEffect
 {
-    public int moodChange;
+    public int moodChange = 0;
+    public int evolutionChange = 0;
     public override void DoEffect(){
         if(GameManager.instance == null){
             return;
         }
         GameManager.instance.AddMoodValue(moodChange);
+        GameManager.instance.AddEvolutionValue(evolutionChange);
     }
 }
 }

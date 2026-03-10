@@ -49,6 +49,9 @@ public class GameManager : MonoBehaviour
     public virtual void AddMoodValue(int moodValue){
         GameData.Instance.MoodValue += moodValue;
     }
+    public virtual void AddEvolutionValue(int evolutionValue){
+        GameData.Instance.EvolutionValue += evolutionValue;
+    }
     public virtual bool CheckAllItemsBoxesFinished(){
         foreach(ItemsBox itemsBox in itemsBoxes){
             if(!itemsBox.Finished()){

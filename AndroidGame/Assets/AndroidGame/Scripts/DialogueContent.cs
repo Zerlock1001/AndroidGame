@@ -12,5 +12,15 @@ public class DialogueContent : ScriptableObject
     [System.Serializable] public class Effects{
         public List<ChoiceEffect> effect;
     }
+    [System.Serializable] public class Conditions{
+        public List<Condition> condition;
+    }
+    [System.Serializable] public class Condition{
+        public bool isMood;
+        public bool higherThan;
+        public int compareValue;
+    }
+    public List<Conditions> conditions;
+    public List<DialogueContent> conditionsTrueDialogues;
 }
 }

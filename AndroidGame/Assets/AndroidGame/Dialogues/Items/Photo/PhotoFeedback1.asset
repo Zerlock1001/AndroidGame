@@ -16,4 +16,6 @@ MonoBehaviour:
   choicesCount: 0
   choices: []
   followingDialogues: []
-  moodChanges: 
+  effects: []
+  conditions: []
+  conditionsTrueDialogues: []

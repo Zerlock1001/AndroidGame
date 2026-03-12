@@ -15,10 +15,12 @@ MonoBehaviour:
   content: Because today is a special day.
   choicesCount: 1
   choices:
-  - Sorry I can't remember.
+  - Sorry, I can't recall it...
   followingDialogues:
   - {fileID: 0}
   effects:
   - effect:
-    - {fileID: 11400000, guid: 4d71f5d2e82bd9345b1bb78be669bc1a, type: 2}
+    - {fileID: 11400000, guid: 71f7c48f27f76584694fe5d0393fdb52, type: 2}
     - {fileID: 11400000, guid: 8b6249ac884dd344fa081b51ec1975f5, type: 2}
+  conditions: []
+  conditionsTrueDialogues: []

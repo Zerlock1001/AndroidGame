@@ -22,5 +22,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e5ba4fb4038b194488bef7d4a58fc06b, type: 2}
   - {fileID: 11400000, guid: 309e4d30bd09c36428a840e348cc2dab, type: 2}
   - {fileID: 11400000, guid: 175761946fb70e04aaedd14092f8e1e3, type: 2}
-  effects:
-  - effect: []
+  effects: []
+  conditions: []
+  conditionsTrueDialogues: []

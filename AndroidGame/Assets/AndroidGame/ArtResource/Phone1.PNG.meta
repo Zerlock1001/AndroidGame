@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 5644747df66491c47ae7d6490a0a62c1
+guid: 43d45e0d97274554bb813d039c2aad0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8056901371553632591
-    second: PhoneShake2_0
+      213: 8915128493601052147
+    second: IMG_5396_0
+  - first:
+      213: -653993983962338248
+    second: IMG_5396_1
+  - first:
+      213: -8524139043807416579
+    second: IMG_5396_2
+  - first:
+      213: 4018556613575821903
+    second: IMG_5396_3
+  - first:
+      213: 6717690768412968326
+    second: IMG_5396_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +108,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PhoneShake2_0
+      name: IMG_5396_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 713
+        y: 75
+        width: 415
+        height: 632
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f41dfc13c1ddfcf60800000000000000
-      internalID: 8056901371553632591
+      spriteID: 3f5dd0c6126e8bb70800000000000000
+      internalID: 8915128493601052147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_5396_1
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 615
+        width: 48
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83caea4cfeb8ce6f0800000000000000
+      internalID: -653993983962338248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_5396_2
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 594
+        width: 55
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe22d5d3bc24b980800000000000000
+      internalID: -8524139043807416579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_5396_3
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 23
+        width: 81
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4acbf5e2f7c4c730800000000000000
+      internalID: 4018556613575821903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_5396_4
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 52
+        width: 75
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6850d2a79280a3d50800000000000000
+      internalID: 6717690768412968326
       vertices: []
       indices: 
       edges: []
@@ -161,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PhoneShake2_0: 8056901371553632591
+      IMG_5396_0: 8915128493601052147
+      IMG_5396_1: -653993983962338248
+      IMG_5396_2: -8524139043807416579
+      IMG_5396_3: 4018556613575821903
+      IMG_5396_4: 6717690768412968326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

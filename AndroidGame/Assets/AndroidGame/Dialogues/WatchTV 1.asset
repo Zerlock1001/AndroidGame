@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
   m_Name: WatchTV 1
   m_EditorClassIdentifier: 
-  content: Do you want to spend this afternoon watching Netflix with me as usual?
+  content: Do you want to spend this afternoon watching TV with me as usual?
   choicesCount: 1
   choices:
   - My Pleasure.
@@ -21,3 +21,5 @@ MonoBehaviour:
   effects:
   - effect:
     - {fileID: 11400000, guid: 8b6249ac884dd344fa081b51ec1975f5, type: 2}
+  conditions: []
+  conditionsTrueDialogues: []

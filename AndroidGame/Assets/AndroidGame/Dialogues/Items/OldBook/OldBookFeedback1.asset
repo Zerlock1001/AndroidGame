@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
   m_Name: OldBookFeedback1
   m_EditorClassIdentifier: 
-  content: You remember! I thought you would forget.
+  content: I thought you would forget.
   choicesCount: 0
   choices: []
   followingDialogues: []
-  moodChanges: 
+  effects:
+  - effect:
+    - {fileID: 11400000, guid: 71f7c48f27f76584694fe5d0393fdb52, type: 2}
+  conditions: []
+  conditionsTrueDialogues: []

@@ -16,4 +16,8 @@ MonoBehaviour:
   choicesCount: 0
   choices: []
   followingDialogues: []
-  effects: []
+  effects:
+  - effect:
+    - {fileID: 11400000, guid: 71f7c48f27f76584694fe5d0393fdb52, type: 2}
+  conditions: []
+  conditionsTrueDialogues: []

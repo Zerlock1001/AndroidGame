@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2479957b67e84634c9b0cb6cb72c677c, type: 3}
+  m_Name: TestBrench
+  m_EditorClassIdentifier: 
+  conditions:
+  - condition:
+    - isMood: 1
+      higherThan: 1
+      compareValue: 50
+    - isMood: 0
+      higherThan: 1
+      compareValue: 50
+  - condition:
+    - isMood: 1
+      higherThan: 0
+      compareValue: 50
+    - isMood: 0
+      higherThan: 1
+      compareValue: 50
+  steps0:
+  - {fileID: 11400000, guid: 4289568af62a1c44f9bd4b1a854d1147, type: 2}
+  - {fileID: 11400000, guid: 08fece6e87a5ac64b9c12382bae92e40, type: 2}
+  steps1:
+  - {fileID: 11400000, guid: 76efecb65e6a096488402492e3beb3af, type: 2}
+  steps2: []
+  steps3: []

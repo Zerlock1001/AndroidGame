@@ -55,5 +55,8 @@ public class DailyLifeGameManager : GameManager
     public DailyLifeStep CurrentStep(){
         return gameSteps[currentStepIndex];
     }
+    public void AddStep(List<DailyLifeStep> steps){
+        gameSteps.InsertRange(currentStepIndex + 1,steps);
+    }
 }
 }

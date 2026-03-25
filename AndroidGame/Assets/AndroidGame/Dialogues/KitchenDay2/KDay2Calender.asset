@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
+  m_Name: KDay2Calender
+  m_EditorClassIdentifier: 
+  content: Everything looks perfect!
+  choicesCount: 3
+  choices:
+  - It really feels like deja vu.
+  - Why did you buy roses?
+  - (sit down)
+  followingDialogues:
+  - {fileID: 11400000, guid: 08abe11f21836ad40a67d841f019eacc, type: 2}
+  - {fileID: 11400000, guid: ae601fa5a832dc248b5ae612f27dbf6b, type: 2}
+  - {fileID: 11400000, guid: 71cf6857e76c54a44a1fc6a57d49cf4a, type: 2}
+  effects: []
+  conditions: []
+  conditionsTrueDialogues: []

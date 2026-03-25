@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AfternoonToEvening
   m_EditorClassIdentifier: 
   GameObjectName: ChangeAnimation
-  animationClip: {fileID: 7400000, guid: ba14b9780a85fe04b927b932090c8fa8, type: 2}
+  animationClip: {fileID: 7400000, guid: 353beeea8a1ae1140bdb59f0020f446f, type: 2}
   duration: 3

@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AndroidGame/Scene/Day2/KitchenDay2.unity
     guid: 7390a62c60944374ebc7ef526fb54e90
+  - enabled: 1
+    path: Assets/AndroidGame/Scene/Day2/LivingroomDay2.unity
+    guid: ec24888b45817ca4d828e0cc5cafb186
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

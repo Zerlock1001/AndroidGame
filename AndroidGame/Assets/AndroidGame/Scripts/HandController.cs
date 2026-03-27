@@ -42,11 +42,6 @@ public class HandController : MonoBehaviour
             }
         }
     }
-    public void DragItem(DraggableItems item){
-        currentItem = item;
-        currentItem.isBeingHeld = true;
-        isDragging = true;
-    }
     public void PutDownItem(){
         if(Input.GetMouseButtonUp(0)){
             if(currentItem != null){
@@ -55,6 +50,11 @@ public class HandController : MonoBehaviour
                 isDragging = false;
             }
         }
+    }
+        public void DragItem(DraggableItems item){
+        currentItem = item;
+        currentItem.isBeingHeld = true;
+        isDragging = true;
     }
 }
 }

@@ -10,6 +10,7 @@ public class DailyLifeStepGameObjectMove : DailyLifeStep
     public override void DoEffect(){
         GameObject gameObject = GameObject.Find(gameObjectName);
         if(gameObject != null){
+            Debug.Log("Move GameObject: " + gameObjectName + " to " + targetPosition);
             gameObject.transform.DOMove(targetPosition, duration);
         }
         DOVirtual.DelayedCall(duration, DailyLifeGameManager.Instance.NextStep);

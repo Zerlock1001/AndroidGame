@@ -6,6 +6,7 @@ public class DialogueContent : ScriptableObject
 {
     public string content;
     public int choicesCount = 0;
+    public List<Conditions> choicesConditions;
     public string[] choices;
     public DialogueContent[] followingDialogues;
     [SerializeField] public Effects[] effects;

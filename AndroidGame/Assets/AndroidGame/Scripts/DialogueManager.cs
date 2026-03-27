@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections.Generic;
 namespace AndroidGame{
 public class DialogueManager : MonoBehaviour
 {
@@ -26,9 +27,52 @@ public class DialogueManager : MonoBehaviour
             choiceButtons[i].SetActive(false);
         }
         for(int i = 0; i < currentDialogueContent.choicesCount; i++){
-            choiceButtons[i].SetActive(true);
-            choiceButtons[i].GetComponentInChildren<TMP_Text>().text = currentDialogueContent.choices[i];
+            if(currentDialogueContent.choicesConditions.Count==0||CheckChoicesConditions(currentDialogueContent.choicesConditions[i])){
+                choiceButtons[i].SetActive(true);
+                choiceButtons[i].GetComponentInChildren<TMP_Text>().text = currentDialogueContent.choices[i];
+            }
+            else{
+                choiceButtons[i].SetActive(false);
+            }
         }
+    }
+    public bool CheckChoicesConditions(DialogueContent.Conditions conditions){
+        if(conditions==null||conditions.condition.Count==0){
+            return true;
+        }
+        foreach(DialogueContent.Condition condition in conditions.condition){
+            if(!CheckCondition(condition)){
+                return false;
+            }
+        }
+        return true;
+    }
+    public bool CheckCondition(DialogueContent.Condition condition){
+        if(condition.isMood){
+            if(condition.higherThan){
+                if(GameData.Instance.MoodValue <= condition.compareValue){
+                    return false;
+                }
+            }
+            else{
+                if(GameData.Instance.MoodValue >= condition.compareValue){
+                    return false;
+                }
+            }
+        }
+        else{
+            if(condition.higherThan){
+                if(GameData.Instance.EvolutionValue <= condition.compareValue){
+                    return false;
+                }
+            }
+            else{
+                if(GameData.Instance.EvolutionValue >= condition.compareValue){
+                    return false;
+                }
+            }
+        }
+        return true;
     }
     public void CheckConditions(){
         for(int i = 0; i < currentDialogueContent.conditions.Count; i++){
@@ -73,7 +117,7 @@ public class DialogueManager : MonoBehaviour
         }
         if(choiceIndex<currentDialogueContent.followingDialogues.Length){
             if(currentDialogueContent.followingDialogues[choiceIndex] != null){
-             DialogueManager.Instance.AwakeDialogue(currentDialogueContent.followingDialogues[choiceIndex]);
+                DialogueManager.Instance.AwakeDialogue(currentDialogueContent.followingDialogues[choiceIndex]);
             }
             else{
                 if(GameManager.instance!=null){
@@ -87,6 +131,11 @@ public class DialogueManager : MonoBehaviour
         else{
             if(GameManager.instance!=null){
                 GameManager.instance.EndDialogue();
+            }
+            else{
+                if(DailyLifeGameManager.Instance!=null){
+                    DailyLifeGameManager.Instance.EndDialogue();
+                }
             }
         }
     }

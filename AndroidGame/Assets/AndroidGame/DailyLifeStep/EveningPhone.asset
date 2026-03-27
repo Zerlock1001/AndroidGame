@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee3cd658516e9442af6f73999a66033, type: 3}
   m_Name: EveningPhone
   m_EditorClassIdentifier: 
-  cameraPosition: {x: -4.4, y: 0.7}
-  cameraSize: 1.5
+  cameraPosition: {x: -4.4, y: 0.6}
+  cameraSize: 0.5
   duration: 2
   delay: 0

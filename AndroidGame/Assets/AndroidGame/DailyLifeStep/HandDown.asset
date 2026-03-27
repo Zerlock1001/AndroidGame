@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HandDown
   m_EditorClassIdentifier: 
   gameObjectName: Hand
-  targetPosition: {x: 0, y: -10, z: 0}
+  targetPosition: {x: -4.5, y: -10, z: 0}
   duration: 2

@@ -9,9 +9,8 @@ public class GameManager : MonoBehaviour
     public Bool isDialogue = Bool.FALSE;
     public TMP_Text dialogueTextObject;
     public GameObject dialoguePanel;
-    public static GameManager instance;
+    public static GameManager instance; 
     public List<ItemsBox> itemsBoxes;
-    //public int 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public virtual void Start()
     {

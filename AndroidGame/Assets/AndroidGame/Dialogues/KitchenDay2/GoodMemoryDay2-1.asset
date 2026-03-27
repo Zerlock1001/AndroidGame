@@ -10,18 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
-  m_Name: GoodMemoryDay2
+  m_Name: GoodMemoryDay2-1
   m_EditorClassIdentifier: 
   content: Today marks our first anniversary of living together. You always had a
     good memory before..
   choicesCount: 3
-  choicesConditions:
-  - condition: []
-  - condition: []
-  - condition:
-    - isMood: 1
-      higherThan: 1
-      compareValue: 50
+  choicesConditions: []
   choices:
   - Oh sorry I don't remember.
   - Yes I remember it! It's 29 October.
@@ -29,6 +23,7 @@ MonoBehaviour:
   followingDialogues:
   - {fileID: 11400000, guid: e0a6920e1eab16a42ab00a5f8c05dbb6, type: 2}
   - {fileID: 11400000, guid: 512a2b17dcca95b4bae604b01a580991, type: 2}
+  - {fileID: 11400000, guid: 2a74eb01924af7c42a655eb4a4c3b229, type: 2}
   effects:
   - effect:
     - {fileID: 11400000, guid: 8b6249ac884dd344fa081b51ec1975f5, type: 2}

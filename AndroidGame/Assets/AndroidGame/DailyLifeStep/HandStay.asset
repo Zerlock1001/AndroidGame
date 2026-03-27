@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HandStay
   m_EditorClassIdentifier: 
   gameObjectName: Hand
-  targetPosition: {x: 0, y: -1.8, z: 0}
+  targetPosition: {x: -4.5, y: 0, z: 0}
   duration: 2

@@ -47,7 +47,7 @@ public class DailyLifeStepBrench : DailyLifeStep
         foreach(var cond in conditions.condition){
             if(cond.isMood){
                 if(cond.higherThan){
-                    if(GameData.Instance.MoodValue <= cond.compareValue){
+                    if(GameData.Instance.MoodValue < cond.compareValue){
                         return false;
                     }
                 }else{
@@ -58,7 +58,7 @@ public class DailyLifeStepBrench : DailyLifeStep
             }
             else{
                 if(cond.higherThan){
-                    if(GameData.Instance.EvolutionValue <= cond.compareValue){
+                    if(GameData.Instance.EvolutionValue < cond.compareValue){
                         return false;
                     }
                 }else{

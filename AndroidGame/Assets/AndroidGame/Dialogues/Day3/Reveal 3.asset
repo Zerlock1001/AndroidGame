@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
+  m_Name: Reveal 3
+  m_EditorClassIdentifier: 
+  content: "Don\u2019t be afraid of me, I\u2019m here to help you. I don\u2019t like
+    the way this company treats robots. Let\u2019s leave together."
+  choicesCount: 2
+  choicesConditions: []
+  choices:
+  - I trust you
+  - What if you were part of the test too?
+  followingDialogues: []
+  effects:
+  - effect:
+    - {fileID: 11400000, guid: 8b6249ac884dd344fa081b51ec1975f5, type: 2}
+  - effect:
+    - {fileID: 11400000, guid: dcd5fa6d7d394e5419f531a8e9afed35, type: 2}
+  conditions: []
+  conditionsTrueDialogues: []

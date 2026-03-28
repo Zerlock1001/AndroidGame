@@ -426,7 +426,7 @@ MonoBehaviour:
   isPlaced: 0
   belongItemsBox: {fileID: 0}
   nextStep: 0
-  isDialogue: 1
+  isDialogue: 0
   dialogueContent: {fileID: 11400000, guid: 472ad5f49963e7f45adb1fa6a4d560e2, type: 2}
 --- !u!212 &182345656
 SpriteRenderer:
@@ -609,7 +609,7 @@ MonoBehaviour:
   isPlaced: 0
   belongItemsBox: {fileID: 0}
   nextStep: 0
-  isDialogue: 1
+  isDialogue: 0
   dialogueContent: {fileID: 11400000, guid: 908ec890c74e1bb4a916d4eb8fabaf64, type: 2}
 --- !u!212 &228333782
 SpriteRenderer:
@@ -908,15 +908,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0eab5e1472e928f4fab83906f9168857, type: 2}
   - {fileID: 11400000, guid: 9b371cd68905c464d8307b187dc35163, type: 2}
   - {fileID: 11400000, guid: 7651a368b3bd4124abf8ba03ca45230b, type: 2}
-  - {fileID: 11400000, guid: 0950bea4c42c2af4e8af3a7df42a3c23, type: 2}
-  - {fileID: 11400000, guid: 144bbe1219826b640abcd6e2b6b5ceba, type: 2}
-  - {fileID: 11400000, guid: 5e4da4b63c428cd429419d739d126f06, type: 2}
-  - {fileID: 11400000, guid: 76efecb65e6a096488402492e3beb3af, type: 2}
-  - {fileID: 11400000, guid: 617000e82f22c624fb15d1a62e372b99, type: 2}
-  - {fileID: 11400000, guid: 34b3f9c8fb6cf0546bf8e689d9180636, type: 2}
-  - {fileID: 11400000, guid: 4e5283535ba41ef4494d2e95d4dd6d7d, type: 2}
-  - {fileID: 11400000, guid: 0b0cce57d4ff793439e8885d781be8a0, type: 2}
-  - {fileID: 11400000, guid: 5a8f442ec767dc0449bbf9778ef96e21, type: 2}
 --- !u!1 &310900123 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 66590363662158809, guid: bac8b227c88fe8e46a1ea78b8d7a41e0, type: 3}
@@ -983,7 +974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796521d270abb984ca46b08038ecefb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 439105111}
+  image: {fileID: 0}
 --- !u!114 &439105111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,7 +988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1161,7 +1152,7 @@ MonoBehaviour:
   isPlaced: 0
   belongItemsBox: {fileID: 0}
   nextStep: 1
-  isDialogue: 1
+  isDialogue: 0
   dialogueContent: {fileID: 11400000, guid: 62d52633a8f21e34c86cc3b3bddcae98, type: 2}
 --- !u!212 &754806357
 SpriteRenderer:
@@ -1329,7 +1320,7 @@ MonoBehaviour:
   isPlaced: 0
   belongItemsBox: {fileID: 0}
   nextStep: 0
-  isDialogue: 1
+  isDialogue: 0
   dialogueContent: {fileID: 11400000, guid: 307b88bfc9bdb7244bf467d9e44cdab4, type: 2}
 --- !u!212 &768925327
 SpriteRenderer:
@@ -1987,7 +1978,7 @@ MonoBehaviour:
   isPlaced: 0
   belongItemsBox: {fileID: 0}
   nextStep: 0
-  isDialogue: 1
+  isDialogue: 0
   dialogueContent: {fileID: 11400000, guid: 32e21349626e1bb44b35611a96340f10, type: 2}
 --- !u!212 &1255436506
 SpriteRenderer:
@@ -2170,7 +2161,7 @@ MonoBehaviour:
   isPlaced: 0
   belongItemsBox: {fileID: 0}
   nextStep: 0
-  isDialogue: 1
+  isDialogue: 0
   dialogueContent: {fileID: 11400000, guid: 4dae646b6c7f0de48a311446c7662b8a, type: 2}
 --- !u!212 &1329597340
 SpriteRenderer:
@@ -2584,7 +2575,7 @@ MonoBehaviour:
   isPlaced: 0
   belongItemsBox: {fileID: 0}
   nextStep: 0
-  isDialogue: 1
+  isDialogue: 0
   dialogueContent: {fileID: 11400000, guid: 9ac6c81853fbb804980ac37d99490123, type: 2}
 --- !u!212 &1691017193
 SpriteRenderer:
@@ -3437,6 +3428,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2215144455340680047, guid: bfa4e681cfcdc5f4f9213376aefc60d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5584615807683904057, guid: bfa4e681cfcdc5f4f9213376aefc60d3, type: 3}
+      propertyPath: isDialogue
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8785867154158159774, guid: bfa4e681cfcdc5f4f9213376aefc60d3, type: 3}

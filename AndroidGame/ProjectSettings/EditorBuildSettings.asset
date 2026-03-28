@@ -29,6 +29,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AndroidGame/Scene/Day2/LivingroomDay2.unity
     guid: ec24888b45817ca4d828e0cc5cafb186
+  - enabled: 1
+    path: Assets/AndroidGame/Scene/Day2/EveningDay2.unity
+    guid: 085feacfb73df89448e8a1507fcd1ce5
+  - enabled: 1
+    path: Assets/AndroidGame/Scene/Day3 Ending/TrueEnding.unity
+    guid: 3eddfb72a8113664591cde63d72aba0f
+  - enabled: 1
+    path: Assets/AndroidGame/Scene/Day3 Ending/BadEnding.unity
+    guid: 6f2bf3302f6b5b746a39e96140d09fb4
+  - enabled: 1
+    path: Assets/AndroidGame/Scene/Day3 Ending/TrueEnding2.unity
+    guid: a2cdbaad267223e4c8543639e76be9c0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -14,16 +14,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conditions:
   - condition:
+    - isMood: 1
+      higherThan: 0
+      compareValue: 50
     - isMood: 0
       higherThan: 0
       compareValue: 50
   - condition:
+    - isMood: 1
+      higherThan: 0
+      compareValue: 50
+    - isMood: 0
+      higherThan: 1
+      compareValue: 50
+  - condition:
+    - isMood: 1
+      higherThan: 1
+      compareValue: 50
     - isMood: 0
       higherThan: 1
       compareValue: 50
   steps0:
   - {fileID: 11400000, guid: 5bc20dde82717434282c2ddc441fab53, type: 2}
+  - {fileID: 11400000, guid: 0950bea4c42c2af4e8af3a7df42a3c23, type: 2}
+  - {fileID: 11400000, guid: 144bbe1219826b640abcd6e2b6b5ceba, type: 2}
+  - {fileID: 11400000, guid: 5e4da4b63c428cd429419d739d126f06, type: 2}
+  - {fileID: 11400000, guid: 617000e82f22c624fb15d1a62e372b99, type: 2}
+  - {fileID: 11400000, guid: 34b3f9c8fb6cf0546bf8e689d9180636, type: 2}
+  - {fileID: 11400000, guid: 4e5283535ba41ef4494d2e95d4dd6d7d, type: 2}
+  - {fileID: 11400000, guid: 0b0cce57d4ff793439e8885d781be8a0, type: 2}
+  - {fileID: 11400000, guid: 67b56779b05e11e4ba811bf82d9bcc0e, type: 2}
   steps1:
   - {fileID: 11400000, guid: 84d05365fdb57a04486e57a298ec1e00, type: 2}
-  steps2: []
+  - {fileID: 11400000, guid: a7394411f54184e4cab4e3b375639457, type: 2}
+  - {fileID: 11400000, guid: 53bc37437cf8bb149825595b7d0f1d81, type: 2}
+  steps2:
+  - {fileID: 11400000, guid: 84d05365fdb57a04486e57a298ec1e00, type: 2}
+  - {fileID: 11400000, guid: a7394411f54184e4cab4e3b375639457, type: 2}
+  - {fileID: 11400000, guid: 53bc37437cf8bb149825595b7d0f1d81, type: 2}
+  - {fileID: 11400000, guid: 213163e1d12356b419fa7638f2a5db77, type: 2}
+  - {fileID: 11400000, guid: b18e428f00385484182210ba8da44970, type: 2}
+  - {fileID: 11400000, guid: 3eb968dcd639f314fa5cf563c40067d4, type: 2}
   steps3: []

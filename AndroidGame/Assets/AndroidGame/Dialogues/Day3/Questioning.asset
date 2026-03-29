@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
+  m_Name: Questioning
+  m_EditorClassIdentifier: 
+  content: Did you figure it out?
+  choicesCount: 3
+  choicesConditions: []
+  choices:
+  - We Are in the Truman Show?
+  - I'm not a human being like you right?
+  - I don't have any clue.
+  followingDialogues:
+  - {fileID: 11400000, guid: 1c89f4f1ac5253b4093d8bd7d5d6bb96, type: 2}
+  - {fileID: 11400000, guid: 1c89f4f1ac5253b4093d8bd7d5d6bb96, type: 2}
+  - {fileID: 11400000, guid: 1c89f4f1ac5253b4093d8bd7d5d6bb96, type: 2}
+  effects: []
+  conditions: []
+  conditionsTrueDialogues: []

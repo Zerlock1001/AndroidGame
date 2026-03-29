@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf8b7154d53a71840a8f50e2d52c285e, type: 3}
   m_Name: ToTrueEnding 2
   m_EditorClassIdentifier: 
-  SceneName: TrueEnding2
-  delay: 0
+  SceneName: TrueEnding_
+  delay: 1

@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3c588c2631c03948b0959a2cbba30e5, type: 3}
-  m_Name: ChangeToTrueEnding2
+  m_Name: ChangeToTrueEnding1
   m_EditorClassIdentifier: 
-  sceneName: TrueEnding2
+  sceneName: TrueEnding1

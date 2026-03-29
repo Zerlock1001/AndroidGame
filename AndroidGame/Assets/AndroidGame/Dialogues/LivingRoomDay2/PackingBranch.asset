@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conditions:
   - condition:
-    - isMood: 1
-      higherThan: 0
-      compareValue: 50
+    - isMood: 0
+      higherThan: 1
+      compareValue: 0
     - isMood: 0
       higherThan: 0
       compareValue: 50
@@ -48,6 +48,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 84d05365fdb57a04486e57a298ec1e00, type: 2}
   - {fileID: 11400000, guid: a7394411f54184e4cab4e3b375639457, type: 2}
   - {fileID: 11400000, guid: 53bc37437cf8bb149825595b7d0f1d81, type: 2}
+  - {fileID: 11400000, guid: b18e428f00385484182210ba8da44970, type: 2}
+  - {fileID: 11400000, guid: 48bdd4316484c404187e2c9f10f3d6c6, type: 2}
   steps2:
   - {fileID: 11400000, guid: 84d05365fdb57a04486e57a298ec1e00, type: 2}
   - {fileID: 11400000, guid: a7394411f54184e4cab4e3b375639457, type: 2}

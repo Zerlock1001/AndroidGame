@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3c588c2631c03948b0959a2cbba30e5, type: 3}
-  m_Name: ChangeToTrueEnding2
-  m_EditorClassIdentifier: 
-  sceneName: TrueEnding2
+  m_Script: {fileID: 11500000, guid: 10b7365c01f9fdb429e4364d476d902c, type: 3}
+  m_Name: Questioning_
+  m_EditorClassIdentifier: Assembly-CSharp::AndroidGame.DailyLifeStepDialogue
+  dialogueContent: {fileID: 11400000, guid: afc6433f8c2cc0f4dbba9982969fbd26, type: 2}

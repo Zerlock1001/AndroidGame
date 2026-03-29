@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ToTrueEnding
   m_EditorClassIdentifier: 
   SceneName: TrueEnding
-  delay: 0
+  delay: 1

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483ddbc1faddbb7408fc085988708240, type: 3}
+  m_Name: Questioning 1
+  m_EditorClassIdentifier: 
+  content: We are not trapped in the same day. We are destined to experiment it over
+    and over again.
+  choicesCount: 1
+  choicesConditions: []
+  choices:
+  - ...?
+  followingDialogues:
+  - {fileID: 11400000, guid: 98bde58676291704ab5c9da763040d69, type: 2}
+  effects: []
+  conditions: []
+  conditionsTrueDialogues: []

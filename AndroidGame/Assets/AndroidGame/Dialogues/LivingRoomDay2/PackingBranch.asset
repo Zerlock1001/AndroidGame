@@ -19,21 +19,21 @@ MonoBehaviour:
       compareValue: 0
     - isMood: 0
       higherThan: 0
-      compareValue: 50
+      compareValue: 20
   - condition:
     - isMood: 1
       higherThan: 0
-      compareValue: 50
+      compareValue: 20
     - isMood: 0
       higherThan: 1
-      compareValue: 50
+      compareValue: 20
   - condition:
     - isMood: 1
       higherThan: 1
-      compareValue: 50
+      compareValue: 20
     - isMood: 0
       higherThan: 1
-      compareValue: 50
+      compareValue: 20
   steps0:
   - {fileID: 11400000, guid: 5bc20dde82717434282c2ddc441fab53, type: 2}
   - {fileID: 11400000, guid: 0950bea4c42c2af4e8af3a7df42a3c23, type: 2}
